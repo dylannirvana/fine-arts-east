@@ -1,0 +1,79 @@
+.actor {
+
+    // @include backImage('../img/hotel.jpg');
+  .fullheight .item{
+    // background: no-repeat center center fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  // Optional captions
+  // -----------------------------
+  // Hidden by default for smaller viewports
+  .carousel-caption {
+    // position: absolute;
+    left: 0;
+    right: 25%;
+    top: 18%;
+    line-height: 180%;
+    // height: inherit;
+    padding-left: 5%;
+    padding-right: 20px;
+    // background: transparentize($aqua, .8);
+    // bottom: 20px;
+    // z-index: 10;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+    // color: $carousel-caption-color;
+    text-align: left;
+    // text-shadow: $carousel-text-shadow;
+    // & .btn {
+    //   text-shadow: none; // No shadow for button elements in carousel-caption
+    // }
+    @include breakpoint($medium) {
+      left: 0;
+      right: 55%;
+      top: 23%;
+      line-height: 200%;
+      // height: inherit;
+      padding-left: 5%;
+      padding-right: 20px;
+    }
+  }
+
+
+  // Scale up controls for tablets and up
+//   @media screen and (min-width: $screen-sm-min) {
+//
+//     // Scale up the controls a smidge
+//     .carousel-control {
+//       .glyphicon-chevron-left,
+//       .glyphicon-chevron-right,
+//       .icon-prev,
+//       .icon-next {
+//         width: ($carousel-control-font-size * 1.5);
+//         height: ($carousel-control-font-size * 1.5);
+//         margin-top: ($carousel-control-font-size / -2);
+//         font-size: ($carousel-control-font-size * 1.5);
+//       }
+//       .glyphicon-chevron-left,
+//       .icon-prev {
+//         margin-left: ($carousel-control-font-size / -2);
+//       }
+//       .glyphicon-chevron-right,
+//       .icon-next {
+//         margin-right: ($carousel-control-font-size / -2);
+//       }
+//     }
+//
+//     // Show and left align the captions
+//     .carousel-caption {
+//       left: 20%;
+//       right: 20%;
+//       padding-bottom: 30px;
+//     }
+}

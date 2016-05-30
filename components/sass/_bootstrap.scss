@@ -1,0 +1,41 @@
+.navbar {
+  background: transparent;
+  background: transparentize($light, .6);
+  border-bottom: none;
+
+  .navbar-brand {
+    // color: $light;
+    color: lighten($red, 5);
+    font-family: $fontScript;
+    $font-weight: $thin;
+    font-size: 1.4em;
+    // padding-top: 30px;
+    padding-left: 20px;
+    // background: transparentize(black, .5);
+    // background: transparent;
+  }
+
+  ul.nav.navbar-nav {
+    li, a {
+      color: $dark;
+    }
+  }
+
+  @include breakpoint($medium) {
+    .navbar-brand {
+      font-size: 2em;
+      padding-left: 40px;
+    }
+  }
+
+}
+.navbar-right {
+  // background: transparentize(white, .8);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: $red;
+  color: $light;
+}
