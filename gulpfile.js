@@ -48,7 +48,7 @@ jsSources = [
   // 'components/bootstrap/javascripts/bootstrap-sprockets.js',
   // 'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
   'components/scripts/TweenMax.min.js',
-  'components/scripts/jquery.scrollmagic.min.js',
+  'components/scripts/ScrollMagic.min.js',
   // 'components/scripts/jquery.slimscroll.min.js',
   // 'components/bootstrap/assets/javascripts/bootstrap.min.js',
   // 'components/bootstrap/assets/javascripts/bootstrap-sprockets.js',

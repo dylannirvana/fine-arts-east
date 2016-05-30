@@ -1,51 +1,4 @@
 @charset "UTF-8";
-/*
-Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-and Blueprint http://www.blueprintcss.org/
-*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-
-------------------------------------------------
-Gulp Styles
-------------------------------------------------
-
-1.0 Compass imports
-  1.0 Compass
-2.0 External Libraries
-  2.1 Susy, Breakpoint
-3.0 Core Partials
-  3.1 Variables
-  3.2 Mixins
-  3.3 Base
-  3.4 Layout
-4.0 Import Modules
-  4.1 Brand
-  4.2 Mission
-  4.3 Season
-  4.4 Players
-  4.5 News
-  4.6 Education
-  4.7 Sponsor
-5.0 Footers
-  5.1 Main Footer
-6.0 Navigation
-  6.1 Main Nav
-7.0 Bootstrap
-  7.1 Bootstrap CDN
-  7.2 Bootstrap Overwrites
-
-------------------------------------------------
-END TABLE OF CONTENTS
-------------------------------------------------
-
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-1.1 Compass
---------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic|Crimson+Text);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -103,27 +56,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/*--------------------------------------------------------------
-2.1 Susy, Breakpoint
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-3.1 Variables
---------------------------------------------------------------*/
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/*--------------------------------------------------------------
-3.2 Mixins
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-3.3 Base
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-3.4 Layout
---------------------------------------------------------------*/
+.navbar {
+  background: transparent;
+  background: rgba(255, 255, 255, 0.4);
+  border-bottom: none;
+}
+.navbar .navbar-brand {
+  color: #862125;
+  font-family: "Libre Baskerville", Helvetica;
+  font-size: 1.4em;
+  padding-left: 20px;
+}
+.navbar ul.nav.navbar-nav li, .navbar ul.nav.navbar-nav a {
+  color: #242424;
+}
+@media (min-width: 960px) {
+  .navbar .navbar-brand {
+    font-size: 2em;
+    padding-left: 40px;
+  }
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #721C1F;
+  color: #fff;
+}
+
 body {
   position: relative;
   background: #D98966;
@@ -162,21 +128,6 @@ body .scene p {
   background: #FFF747;
 }
 
-/*--------------------------------------------------------------
-4.1 Brand
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-4.2 Mission
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-4.3 Season
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-4.4 Players
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-4.5 News
---------------------------------------------------------------*/
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -7515,7 +7466,7 @@ button.close {
     display: none !important;
   }
 }
-.actor .fullheight .item {
+#fine-arts-east .fullheight .item {
   background-position: top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -7523,7 +7474,7 @@ button.close {
   -o-background-size: cover;
   background-size: cover;
 }
-.actor .carousel-caption {
+#fine-arts-east .carousel-caption {
   left: 0;
   right: 25%;
   top: 18%;
@@ -7533,7 +7484,7 @@ button.close {
   text-align: left;
 }
 @media (min-width: 960px) {
-  .actor .carousel-caption {
+  #fine-arts-east .carousel-caption {
     left: 0;
     right: 55%;
     top: 23%;
@@ -7543,34 +7494,6 @@ button.close {
   }
 }
 
-.navbar {
-  background: transparent;
-  background: rgba(255, 255, 255, 0.4);
-  border-bottom: none;
-}
-.navbar .navbar-brand {
-  color: #862125;
-  font-family: "Libre Baskerville", Helvetica;
-  font-size: 1.4em;
-  padding-left: 20px;
-}
-.navbar ul.nav.navbar-nav li, .navbar ul.nav.navbar-nav a {
-  color: #242424;
-}
-@media (min-width: 960px) {
-  .navbar .navbar-brand {
-    font-size: 2em;
-    padding-left: 40px;
-  }
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  background-color: #721C1F;
-  color: #fff;
-}
-
 .footer {
   background-color: #313131;
   height: 140px;
@@ -7578,22 +7501,3 @@ button.close {
   font-size: 1rem;
   color: #d9d9d9;
 }
-
-/*--------------------------------------------------------------
-4.6 Education
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-4.7 Sponsor
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-5.1 Main Footer
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-6.1 Main nav
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-7.1 Bootstrap CDN
-----------------------------------------------------------*/
-/*--------------------------------------------------------------
-7.2 Bootstrap Overwrites
-----------------------------------------------------------*/

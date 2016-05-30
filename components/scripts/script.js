@@ -1,18 +1,7 @@
 $(function() {
-  var topoffset = 42;
+  var topoffset = 0;
 
   var isTouch = 'ontouchstart' in document.documentElement;
-
-  // //window height
-  // var wheight = $(window).height(); //get height of the window
-  //
-  // $('.fullheight').css('height', wheight);
-  // // $('.halfheight').css('height', wheight/2);
-  //
-  // $(window).resize(function() {
-  //   var wheight = $(window).height(); //get height of the window
-  //   $('.fullheight').css('height', wheight);
-  // }) //on resize
 
   var $item = $('.carousel-main .item');
   var $wHeight = $(window).height();
@@ -54,51 +43,24 @@ $(function() {
       } // target.length
     } //location hostname
   }); //on click
-//
-//   // highlight navigation
-//   $(window).scroll(function() {
-//     var windowpos = $(window).scrollTop() + topoffset;
-//     $('nav li a').removeClass('active');
-//
-//     if (windowpos > $('#actor').offset().top-1) {
-//       $('nav li a').removeClass('active');
-//       $('a[href$="#actor"]').addClass('active');
-//     } //windowpos
-//
-//     if (windowpos > $('#reel').offset().top-1) {
-//       $('nav li a').removeClass('active');
-//       $('a[href$="#reel"]').addClass('active');
-//     } //windowpos
-//
-//     if (windowpos > $('#bio').offset().top-1) {
-//       $('nav li a').removeClass('active');
-//       $('a[href$="#bio"]').addClass('active');
-//     } //windowpos
-//
-//     if (windowpos > $('#calendar').offset().top-1) {
-//       $('nav li a').removeClass('active');
-//       $('a[href$="#calendar"]').addClass('active');
-//     } //windowpos
-//
-//     if (windowpos > $('#blog').offset().top-1) {
-//       $('nav li a').removeClass('active');
-//       $('a[href$="#blog"]').addClass('active');
-//     } //windowpos
-//
-//   }); //window scroll
-
-
-  $(".nav a").on("click", function(){
-     $(".nav").find(".active").removeClass("active");
-     $(this).parent().addClass("active");
-  });
 
   //set up ScrollMagic
-  var controller = new ScrollMagic({
-    globalSceneOptions: {
-      triggerHook: "onLeave"
-    }
-  });
+  // var controller = new ScrollMagic({
+  //   globalSceneOptions: {
+  //     triggerHook: "onLeave"
+  //   }
+  // });
+
+  // init controller
+// var controller = new ScrollMagic.Controller();
+//
+// // create a scene
+// new ScrollMagic.Scene({
+//         duration: 100,    // the scene should last for a scroll distance of 100px
+//         offset: 50        // start this scene after scrolling for 50px
+//     })
+//     .setPin("#my-sticky-element") // pins the element for the the scene's duration
+//     .addTo(controller); // assign the scene to the controller
 
   //pin the navigation
   // var pin = new ScrollScene({
