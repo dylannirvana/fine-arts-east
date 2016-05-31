@@ -49,7 +49,7 @@ $dark	: darken($gray, 5); // gray
 
 
 $headerBg			: $ltGray;
-$backgroundColor	: $skin;
+$backgroundColor	: $light;
 $typeDefault		: $dark;
 $headersub			: $aqua;
 
@@ -67,7 +67,7 @@ $navActive			: $ltGray;
 
 $fontSans	: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 $fontSerif	: 'Crimson Text', Times, serif !default;
-$fontScript	: 'Libre Baskerville', Helvetica !default;
+$fontScript	: 'Crimson Text', Times, serif !default;
 // $fontScript	: 'Amiri', Helvetica !default;
 // $fontScript	: 'Old Standard TT', Helvetica !default;
 

@@ -1,7 +1,8 @@
 #fine-arts-east {
 
+    // IMAGE FULL HEIGHT OF WINDOW
     // @include backImage('../img/hotel.jpg');
-  .fullheight .item{
+  .fullheight .item {
     // background: no-repeat center center fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -9,71 +10,49 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    position: relative;
   }
 
-  // Optional captions
-  // -----------------------------
-  // Hidden by default for smaller viewports
-  .carousel-caption {
-    // position: absolute;
-    left: 0;
-    right: 25%;
-    top: 18%;
-    line-height: 180%;
-    // height: inherit;
-    padding-left: 5%;
-    padding-right: 20px;
-    // background: transparentize($aqua, .8);
-    // bottom: 20px;
-    // z-index: 10;
-    // padding-top: 20px;
-    // padding-bottom: 20px;
-    // color: $carousel-caption-color;
-    text-align: left;
-    // text-shadow: $carousel-text-shadow;
-    // & .btn {
-    //   text-shadow: none; // No shadow for button elements in carousel-caption
-    // }
-    @include breakpoint($medium) {
-      left: 0;
-      right: 55%;
+  .image {
+    position: relative;
+    width: 100%;
+
+    .title {
+      position: absolute;
+      width: 100%;
+      text-align: center;
       top: 23%;
-      line-height: 200%;
-      // height: inherit;
-      padding-left: 5%;
-      padding-right: 20px;
+
+      // add blur later
+      // .blur {
+      //   background-image: url(../img/firenze.jpg);
+      //   -webkit-filter: blur(10px);
+      //   filter: url('/media/blur.svg#blur');
+      //   filter: blur(10px);
+      // }
+
+      // title
+      h1 {
+        color: darken($dark, 10);
+        font-size: 5em;
+        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+      }
+
+      // background for sub type
+      span {
+        //  color: $dark;
+        //  background: rgb(0, 0, 0); /* fallback color */
+         background: rgba(255, 255, 255, 0.3);
+         padding: 120px 100px 60px 100px;
+      }
     }
-  }
+
+  } // END image
 
 
-  // Scale up controls for tablets and up
-//   @media screen and (min-width: $screen-sm-min) {
-//
-//     // Scale up the controls a smidge
-//     .carousel-control {
-//       .glyphicon-chevron-left,
-//       .glyphicon-chevron-right,
-//       .icon-prev,
-//       .icon-next {
-//         width: ($carousel-control-font-size * 1.5);
-//         height: ($carousel-control-font-size * 1.5);
-//         margin-top: ($carousel-control-font-size / -2);
-//         font-size: ($carousel-control-font-size * 1.5);
-//       }
-//       .glyphicon-chevron-left,
-//       .icon-prev {
-//         margin-left: ($carousel-control-font-size / -2);
-//       }
-//       .glyphicon-chevron-right,
-//       .icon-next {
-//         margin-right: ($carousel-control-font-size / -2);
-//       }
-//     }
-//
-//     // Show and left align the captions
-//     .carousel-caption {
-//       left: 20%;
-//       right: 20%;
-//       padding-bottom: 30px;
-//     }
-}
+
+
+
+
+} // END fine arts east

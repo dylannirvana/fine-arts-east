@@ -13,7 +13,6 @@
 
 // CORE
 @import "variables";
-@import "bootstrap";
 
 // MIXINS
 @import "mixins";
@@ -24,6 +23,7 @@
 
 // TWBS 3
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bootstrap";
 
 // MODULES
 @import "modules/fine-arts-east";

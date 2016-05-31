@@ -1,0 +1,20 @@
+#delue {
+  .modal {
+    // position: relative;
+    button {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+  } // END modal
+
+  .carousel-caption {
+    text-align: left;
+    bottom: 40px;
+  }
+
+  h3 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
