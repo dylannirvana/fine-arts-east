@@ -5,6 +5,8 @@ node_modules
 projectNotes/*
 img/*
 builds/development/img/*
+builds/development/fonts/*
 builds/production
 fonts/*
 wordpress/*
+vendors/*
